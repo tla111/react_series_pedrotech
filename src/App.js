@@ -1,21 +1,21 @@
 import './App.css';
 
 function App() {
-  const name = <h2>Pedro</h2>
-  const age = <h3>21</h3>
-  const email = <h4>Pedro@pedro.com</h4>
-  const user = (
-    <div>
-      {name}
-      {age}
-      {email}
-    </div>
-  )
   return (
     <div className="App">
-      {user}
+      <User />
     </div>
   );
+}
+
+const User = () => {
+  return (
+    <div>
+      <h1>Pedro</h1>
+      <h1>21</h1>
+      <h1>Pedro@gmail.com</h1>
+    </div>
+  )
 }
 
 export default App;
