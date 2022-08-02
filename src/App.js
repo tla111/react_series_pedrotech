@@ -9,12 +9,12 @@ function App() {
   );
 }
 
-const User = (props) => {
+const User = ({ name, age, email }) => {
   return (
     <div>
-      <h1>{props.name}</h1>
-      <h1>{props.age}</h1>
-      <h1>{props.email}</h1>
+      <h1>{name}</h1>
+      <h1>{age}</h1>
+      <h1>{email}</h1>
     </div>
   )
 }
