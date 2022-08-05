@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AppleStore = ({ product, quantity, price }) => {
+const User = ({ product, quantity, price }) => {
     return (
         <div>
             <h1>{product}</h1>
@@ -11,4 +11,4 @@ const AppleStore = ({ product, quantity, price }) => {
 }
 
 
-export default AppleStore;
+export default User;
