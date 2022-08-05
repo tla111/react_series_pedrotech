@@ -1,11 +1,11 @@
 import React from 'react'
 
-const User = ({ product, quantity, price }) => {
+const User = ({ name, age, email }) => {
     return (
         <div>
-            <h1>{product}</h1>
-            <h1>{quantity}</h1>
-            <h1>${price}</h1>
+            <h1>{name}</h1>
+            <h1>{age}</h1>
+            <h1>{email}</h1>
         </div>
     )
 }
