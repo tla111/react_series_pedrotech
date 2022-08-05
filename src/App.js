@@ -1,4 +1,5 @@
 import './App.css';
+import AppleStore from './Components/AppleStore';
 
 function App() {
   return (
@@ -19,13 +20,5 @@ const User = ({ name, age, email }) => {
     </div>
   )
 }
-
-const AppleStore = ({ product, quantity, price }) => (
-  <div>
-    <h1>{product}</h1>
-    <h1>{quantity}</h1>
-    <h1>${price}</h1>
-  </div>
-)
 
 export default App;
