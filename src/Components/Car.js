@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Car = () => {
+const Car = ({ model, color, year }) => {
     return (
-        <div>Car</div>
+        <div>
+            <h1>Model: {model}</h1>
+            <h1>Color: {color}</h1>
+            <h1>Year: {year}</h1>
+        </div>
     )
 }
 
