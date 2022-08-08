@@ -10,6 +10,7 @@ function App() {
       <User name="Tim" age={29} email="tim@gmail.com" />
       <AppleStore product="iPhone" quantity="1" price="500" />
       <Car model="Toyota CH-R" color="Bronze" year="2021" /> */}
+      <h1 className="name">Pedro</h1>
     </div>
   );
 }
