@@ -49,11 +49,11 @@ function App() {
           <Planet name={planet.name} />
         )
       })}
-      {/* {planets.map((planet, key) => {
+      {planets.map((planet, key) => {
         return (
-          { planet.isGasPlanet ? <Planet name={planet.name} /> : <h1>Hi</h1> }
+          planet.isGasPlanet ? <Planet name={planet.name} /> : ""
         )
-      })} */}
+      })}
     </div>
   );
 }
