@@ -9,10 +9,18 @@ function App() {
   // const isBlue = true;
   // const bgYellow = false;
   // const names = ["Pedro", "Jake", "Jessica", "Mike", "Dustin", "Lukas"];
-  const users = [
-    { name: "Pedro", age: 21 },
-    { name: "Jake", age: 25 },
-    { name: "Jessica", age: 45 },
+  // const users = [
+  //   { name: "Pedro", age: 21 },
+  //   { name: "Jake", age: 25 },
+  //   { name: "Jessica", age: 45 },
+  // ]
+  const planets = [
+    { name: "Mars", isGasPlanet: false },
+    { name: "Earth", isGasPlanet: false },
+    { name: "Jupiter", isGasPlanet: true },
+    { name: "Venus", isGasPlanet: false },
+    { name: "Neptune", isGasPlanet: true },
+    { name: "Uranus", isGasPlanet: true },
   ]
 
   return (
@@ -24,21 +32,32 @@ function App() {
       {/* {age >= 18 ? <h1>Over Age</h1> : <h1>Under Age</h1>}
       <h1 style={{ color: isGreen ? "green" : "red" }}>This Has Color</h1>
       <h2 style={{ color: isBlue ? "blue" : "orange", backgroundColor: bgYellow ? "yellow" : "black" }}>This is Blue</h2> */}
-      {users.map((user, key) => {
+      {/* {users.map((user, key) => {
         return (
-          <User name={user.name} age={user.age} />
+          <User2 name={user.name} age={user.age} key={key} />
+        )
+      })} */}
+      {planets.map((planet, key) => {
+        return (
+          <Planet name={planet.name} />
         )
       })}
     </div>
   );
 }
 
-const User = (props) => {
+// const User2 = (props) => {
+//   return (
+//     <div>
+//       {props.name} {props.age}
+//     </div>
+//   );
+// }
+
+const Planet = (props) => {
   return (
-    <div>
-      {props.name} {props.age}
-    </div>
-  );
+    <div>{props.name}</div>
+  )
 }
 
 
