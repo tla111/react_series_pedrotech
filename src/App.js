@@ -23,6 +23,8 @@ function App() {
     { name: "Uranus", isGasPlanet: true },
   ]
 
+  const isGasPlanetPlanets = planets.filter(planet => planet.isGasPlanet === true);
+
   return (
     <div className="App">
       {/* <User name="Pedro" age={21} email="pedro@gmail.com" />
@@ -42,6 +44,16 @@ function App() {
           <Planet name={planet.name} />
         )
       })}
+      {isGasPlanetPlanets.map((planet, key) => {
+        return (
+          <Planet name={planet.name} />
+        )
+      })}
+      {/* {planets.map((planet, key) => {
+        return (
+          { planet.isGasPlanet ? <Planet name={planet.name} /> : <h1>Hi</h1> }
+        )
+      })} */}
     </div>
   );
 }
