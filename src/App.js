@@ -19,7 +19,9 @@ function App() {
       {/* {age >= 18 ? <h1>Over Age</h1> : <h1>Under Age</h1>}
       <h1 style={{ color: isGreen ? "green" : "red" }}>This Has Color</h1>
       <h2 style={{ color: isBlue ? "blue" : "orange", backgroundColor: bgYellow ? "yellow" : "black" }}>This is Blue</h2> */}
-      <h1>{names[0]}</h1>
+      {names.map((name, key) => {
+        return <h1 key={key}>{name}</h1>
+      })}
     </div>
   );
 }
