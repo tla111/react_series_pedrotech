@@ -4,10 +4,11 @@ import User from './Components/User';
 import Car from './Components/Car';
 
 function App() {
-  const age = 19;
-  const isGreen = true;
-  const isBlue = true;
-  const bgYellow = false;
+  // const age = 19;
+  // const isGreen = true;
+  // const isBlue = true;
+  // const bgYellow = false;
+  const names = ["Pedro", "Jake", "Jessica", "Mike", "Dustin"];
 
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
       {/* {age >= 18 ? <h1>Over Age</h1> : <h1>Under Age</h1>}
       <h1 style={{ color: isGreen ? "green" : "red" }}>This Has Color</h1>
       <h2 style={{ color: isBlue ? "blue" : "orange", backgroundColor: bgYellow ? "yellow" : "black" }}>This is Blue</h2> */}
+      <h1>{names[0]}</h1>
     </div>
   );
 }
