@@ -8,7 +8,12 @@ function App() {
   // const isGreen = true;
   // const isBlue = true;
   // const bgYellow = false;
-  const names = ["Pedro", "Jake", "Jessica", "Mike", "Dustin"];
+  // const names = ["Pedro", "Jake", "Jessica", "Mike", "Dustin", "Lukas"];
+  const users = [
+    { name: "Pedro", age: 21 },
+    { name: "Jake", age: 25 },
+    { name: "Jessica", age: 45 },
+  ]
 
   return (
     <div className="App">
@@ -19,8 +24,13 @@ function App() {
       {/* {age >= 18 ? <h1>Over Age</h1> : <h1>Under Age</h1>}
       <h1 style={{ color: isGreen ? "green" : "red" }}>This Has Color</h1>
       <h2 style={{ color: isBlue ? "blue" : "orange", backgroundColor: bgYellow ? "yellow" : "black" }}>This is Blue</h2> */}
-      {names.map((name, key) => {
-        return <h1 key={key}>{name}</h1>
+      {users.map((user, key) => {
+        return (
+          <div style={{ display: "flex" }}>
+            <h1 key={key}>{user.name} | </h1>
+            <h1 key={key}> | {user.age}</h1>
+          </div>
+        )
       })}
     </div>
   );
