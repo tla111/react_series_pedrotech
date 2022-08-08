@@ -5,6 +5,9 @@ import Car from './Components/Car';
 
 function App() {
   const age = 19;
+  const isGreen = true;
+  const isBlue = true;
+  const bgYellow = false;
 
   return (
     <div className="App">
@@ -12,7 +15,9 @@ function App() {
       <User name="Tim" age={29} email="tim@gmail.com" />
       <AppleStore product="iPhone" quantity="1" price="500" />
       <Car model="Toyota CH-R" color="Bronze" year="2021" /> */}
-      {age >= 18 ? <h1>Over Age</h1> : <h1>Under Age</h1>}
+      {/* {age >= 18 ? <h1>Over Age</h1> : <h1>Under Age</h1>}
+      <h1 style={{ color: isGreen ? "green" : "red" }}>This Has Color</h1>
+      <h2 style={{ color: isBlue ? "blue" : "orange", backgroundColor: bgYellow ? "yellow" : "black" }}>This is Blue</h2> */}
     </div>
   );
 }
