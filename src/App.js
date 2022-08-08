@@ -1,7 +1,7 @@
 import './App.css';
-import AppleStore from './Components/AppleStore';
-import User from './Components/User';
-import Car from './Components/Car';
+// import AppleStore from './Components/AppleStore';
+// import User from './Components/User';
+// import Car from './Components/Car';
 
 function App() {
   // const age = 19;
@@ -26,12 +26,17 @@ function App() {
       <h2 style={{ color: isBlue ? "blue" : "orange", backgroundColor: bgYellow ? "yellow" : "black" }}>This is Blue</h2> */}
       {users.map((user, key) => {
         return (
-          <div style={{ display: "flex" }}>
-            <h1 key={key}>{user.name} | </h1>
-            <h1 key={key}> | {user.age}</h1>
-          </div>
+          <User name={user.name} age={user.age} />
         )
       })}
+    </div>
+  );
+}
+
+const User = (props) => {
+  return (
+    <div>
+      {props.name} {props.age}
     </div>
   );
 }
