@@ -1,3 +1,4 @@
+// import { useState } from 'react';
 import './App.css';
 // import AppleStore from './Components/AppleStore';
 // import User from './Components/User';
@@ -25,6 +26,13 @@ function App() {
 
   // const isGasPlanetPlanets = planets.filter(planet => planet.isGasPlanet === true);
 
+  let age = 0;
+
+  const increaseAge = () => {
+    age = age + 1;
+    console.log(age);
+  }
+
   return (
     <div className="App">
       {/* <User name="Pedro" age={21} email="pedro@gmail.com" />
@@ -50,6 +58,8 @@ function App() {
         )
       })}
       {planets.map((planet, key) => planet.isGasPlanet ? <Planet name={planet.name} key={key} /> : "")} */}
+      {age}
+      <button onClick={increaseAge}>Incease Age</button>
     </div>
   );
 }
