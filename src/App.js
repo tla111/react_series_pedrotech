@@ -14,16 +14,16 @@ function App() {
   //   { name: "Jake", age: 25 },
   //   { name: "Jessica", age: 45 },
   // ]
-  const planets = [
-    { name: "Mars", isGasPlanet: false },
-    { name: "Earth", isGasPlanet: false },
-    { name: "Jupiter", isGasPlanet: true },
-    { name: "Venus", isGasPlanet: false },
-    { name: "Neptune", isGasPlanet: true },
-    { name: "Uranus", isGasPlanet: true },
-  ]
+  // const planets = [
+  //   { name: "Mars", isGasPlanet: false },
+  //   { name: "Earth", isGasPlanet: false },
+  //   { name: "Jupiter", isGasPlanet: true },
+  //   { name: "Venus", isGasPlanet: false },
+  //   { name: "Neptune", isGasPlanet: true },
+  //   { name: "Uranus", isGasPlanet: true },
+  // ]
 
-  const isGasPlanetPlanets = planets.filter(planet => planet.isGasPlanet === true);
+  // const isGasPlanetPlanets = planets.filter(planet => planet.isGasPlanet === true);
 
   return (
     <div className="App">
@@ -39,7 +39,7 @@ function App() {
           <User2 name={user.name} age={user.age} key={key} />
         )
       })} */}
-      {planets.map((planet, key) => {
+      {/* {planets.map((planet, key) => {
         return (
           <Planet name={planet.name} />
         )
@@ -49,7 +49,7 @@ function App() {
           <Planet name={planet.name} />
         )
       })}
-      {planets.map((planet, key) => planet.isGasPlanet ? <Planet name={planet.name} key={key} /> : "")}
+      {planets.map((planet, key) => planet.isGasPlanet ? <Planet name={planet.name} key={key} /> : "")} */}
     </div>
   );
 }
@@ -62,11 +62,11 @@ function App() {
 //   );
 // }
 
-const Planet = (props) => {
-  return (
-    <div>{props.name}</div>
-  )
-}
+// const Planet = (props) => {
+//   return (
+//     <div>{props.name}</div>
+//   )
+// }
 
 
 
