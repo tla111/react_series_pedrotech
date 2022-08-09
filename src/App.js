@@ -28,6 +28,10 @@ function App() {
 
   const [age, setAge] = useState(0);
 
+  const increaseAge = () => {
+    setAge(5);
+  }
+
   return (
     <div className="App">
       {/* <User name="Pedro" age={21} email="pedro@gmail.com" />
@@ -54,7 +58,7 @@ function App() {
       })}
       {planets.map((planet, key) => planet.isGasPlanet ? <Planet name={planet.name} key={key} /> : "")} */}
       {age}
-      {/* <button onClick={increaseAge}>Incease Age</button> */}
+      <button onClick={increaseAge}>Increase Age</button>
     </div>
   );
 }
