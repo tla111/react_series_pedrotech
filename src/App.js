@@ -28,6 +28,7 @@ function App() {
 
   const [age, setAge] = useState(0);
   const [inputValue, setInputValue] = useState("");
+  const [showText, setShowText] = useState(false);
 
   const increaseAge = () => {
     setAge(age - 1);
@@ -62,10 +63,12 @@ function App() {
         )
       })}
       {planets.map((planet, key) => planet.isGasPlanet ? <Planet name={planet.name} key={key} /> : "")} */}
-      {age}
+      {/* {age}
       <button onClick={increaseAge}>Increase Age</button>
       <input type="text" onChange={handleInputChange} />
-      {inputValue}
+      {inputValue} */}
+      <button>Show/Hide</button>
+      {showText === true && <h1>HI MY NAME IS PEDRO</h1>}
     </div>
   );
 }
