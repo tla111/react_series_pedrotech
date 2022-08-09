@@ -29,7 +29,7 @@ function App() {
   const [age, setAge] = useState(0);
 
   const increaseAge = () => {
-    setAge(5);
+    setAge(age + 1);
   }
 
   return (
