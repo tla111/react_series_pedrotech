@@ -26,18 +26,18 @@ function App() {
 
   // const isGasPlanetPlanets = planets.filter(planet => planet.isGasPlanet === true);
 
-  const [age, setAge] = useState(0);
-  const [inputValue, setInputValue] = useState("");
-  const [showText, setShowText] = useState(true);
-  const [textColor, setTextColor] = useState("red");
+  // const [age, setAge] = useState(0);
+  // const [inputValue, setInputValue] = useState("");
+  // const [showText, setShowText] = useState(true);
+  // const [textColor, setTextColor] = useState("red");
 
-  const increaseAge = () => {
-    setAge(age - 1);
-  }
+  // const increaseAge = () => {
+  //   setAge(age - 1);
+  // }
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value)
-  }
+  // const handleInputChange = (e) => {
+  //   setInputValue(e.target.value)
+  // }
 
   return (
     <div className="App">
@@ -70,8 +70,8 @@ function App() {
       {inputValue} */}
       {/* <button onClick={() => setShowText(!showText)}>Show/Hide</button> */}
       {/* {showText === true && <h1>HI MY NAME IS PEDRO</h1>} */}
-      <button onClick={() => setTextColor(textColor === "red" ? "blue" : "red")}>Change Color</button>
-      <h1 style={{ color: textColor }}>HI MY NAME IS PEDRO</h1>
+      {/* <button onClick={() => setTextColor(textColor === "red" ? "blue" : "red")}>Change Color</button>
+      <h1 style={{ color: textColor }}>HI MY NAME IS PEDRO</h1> */}
     </div>
   );
 }
