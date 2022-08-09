@@ -27,9 +27,14 @@ function App() {
   // const isGasPlanetPlanets = planets.filter(planet => planet.isGasPlanet === true);
 
   const [age, setAge] = useState(0);
+  const [inputValue, setInputValue] = useState("");
 
   const increaseAge = () => {
     setAge(age - 1);
+  }
+
+  const handleInputChange = (e) => {
+    console.log(e.target.value);
   }
 
   return (
@@ -59,6 +64,8 @@ function App() {
       {planets.map((planet, key) => planet.isGasPlanet ? <Planet name={planet.name} key={key} /> : "")} */}
       {age}
       <button onClick={increaseAge}>Increase Age</button>
+      <input type="text" onChange={handleInputChange} />
+      {inputValue}
     </div>
   );
 }
