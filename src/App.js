@@ -28,7 +28,7 @@ function App() {
 
   const [age, setAge] = useState(0);
   const [inputValue, setInputValue] = useState("");
-  const [showText, setShowText] = useState(false);
+  const [showText, setShowText] = useState(true);
 
   const increaseAge = () => {
     setAge(age - 1);
@@ -67,7 +67,7 @@ function App() {
       <button onClick={increaseAge}>Increase Age</button>
       <input type="text" onChange={handleInputChange} />
       {inputValue} */}
-      <button>Show/Hide</button>
+      <button onClick={() => setShowText(!showText)}>Show/Hide</button>
       {showText === true && <h1>HI MY NAME IS PEDRO</h1>}
     </div>
   );
