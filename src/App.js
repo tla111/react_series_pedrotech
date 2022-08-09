@@ -29,6 +29,7 @@ function App() {
   const [age, setAge] = useState(0);
   const [inputValue, setInputValue] = useState("");
   const [showText, setShowText] = useState(true);
+  const [textColor, setTextColor] = useState("red");
 
   const increaseAge = () => {
     setAge(age - 1);
@@ -67,8 +68,10 @@ function App() {
       <button onClick={increaseAge}>Increase Age</button>
       <input type="text" onChange={handleInputChange} />
       {inputValue} */}
-      <button onClick={() => setShowText(!showText)}>Show/Hide</button>
-      {showText === true && <h1>HI MY NAME IS PEDRO</h1>}
+      {/* <button onClick={() => setShowText(!showText)}>Show/Hide</button> */}
+      {/* {showText === true && <h1>HI MY NAME IS PEDRO</h1>} */}
+      <button onClick={() => setTextColor(textColor === "red" ? "blue" : "red")}>Change Color</button>
+      <h1 style={{ color: textColor }}>HI MY NAME IS PEDRO</h1>
     </div>
   );
 }
