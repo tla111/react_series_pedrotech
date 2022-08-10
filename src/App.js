@@ -10,7 +10,8 @@ const App = () => {
     };
 
     const addTask = () => {
-
+        const newTodoList = [...todoList, newTask];
+        setTodoList(newTodoList);
     };
 
     return (
