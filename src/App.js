@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 const App = () => {
-    const [todoList, setTodoList] = useState({});
+    const [todoList, setTodoList] = useState([]);
     const [newTask, setNewTask] = useState("");
 
     const handleChange = (e) => {
@@ -17,8 +17,8 @@ const App = () => {
         setTodoList([...todoList, task]);
     };
 
-    const deleteTask = (taskName) => {
-        setTodoList(todoList.filter((task) => task !== taskName));
+    const deleteTask = (id) => {
+        setTodoList(todoList.filter((task) => task.id !== id));
     };
 
     return (
@@ -31,8 +31,8 @@ const App = () => {
                 {todoList.map((task) => {
                     return (
                         <div>
-                            <h1>{task}</h1>
-                            <button onClick={() => deleteTask(task)}>X</button>
+                            <h1>{task.taskName}</h1>
+                            <button onClick={() => deleteTask(task.id)}>X</button>
                         </div>
                     )
                 })}
