@@ -21,7 +21,9 @@ const App = () => {
                 <button onClick={addTask}>Add Task</button>
             </div>
             <div className="list">
-                {newTask}
+                {todoList.map((task) => {
+                    return <h1>{task}</h1>
+                })}
             </div>
         </div>
     )
