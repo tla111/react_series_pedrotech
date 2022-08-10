@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 const App = () => {
-    const [todoList, setTodoList] = useState([]);
+    const [todoList, setTodoList] = useState({});
     const [newTask, setNewTask] = useState("");
 
     const handleChange = (e) => {
@@ -10,7 +10,11 @@ const App = () => {
     };
 
     const addTask = () => {
-        setTodoList([...todoList, newTask]);
+        const task = {
+            id: todoList.length === 0 ? 1 : todoList[todoList.length - 1].id + 1,
+            taskName: newTask
+        }
+        setTodoList([...todoList, task]);
     };
 
     const deleteTask = (taskName) => {
