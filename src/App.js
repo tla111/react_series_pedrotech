@@ -13,6 +13,10 @@ const App = () => {
         setTodoList([...todoList, newTask]);
     };
 
+    const deleteTask = (task) => {
+        // setTodoList([...todoList, ])
+    };
+
     return (
         <div className="App">
             <div className="addTask">
@@ -24,7 +28,7 @@ const App = () => {
                     return (
                         <div>
                             <h1>{task}</h1>
-                            <button>X</button>
+                            <button onClick={() => deleteTask(task)}>X</button>
                         </div>
                     )
                 })}
