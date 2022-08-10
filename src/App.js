@@ -3,11 +3,12 @@ import './App.css';
 
 const App = () => {
     const [todoList, setTodoList] = useState([]);
+    const [newTask, setNewTask] = useState("");
 
     return (
         <div className="App">
             <div className="addTask">
-                <input />
+                {/* <input onChange={ } /> */}
                 <button>Add Task</button>
             </div>
             <div className="list"></div>
