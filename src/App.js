@@ -14,10 +14,7 @@ const App = () => {
     };
 
     const deleteTask = (taskName) => {
-        const newTodoList = todoList.filter((task) => {
-            return task !== taskName;
-        });
-        setTodoList(newTodoList);
+        setTodoList(todoList.filter((task) => task !== taskName));
     };
 
     return (
