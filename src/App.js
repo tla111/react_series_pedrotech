@@ -7,19 +7,23 @@ const App = () => {
 
     const handleChange = (e) => {
         setNewTask(e.target.value);
-    }
+    };
+
+    const addTask = () => {
+
+    };
 
     return (
         <div className="App">
             <div className="addTask">
                 <input onChange={handleChange} />
-                <button>Add Task</button>
+                <button onClick={addTask}>Add Task</button>
             </div>
             <div className="list">
                 {newTask}
             </div>
         </div>
     )
-}
+};
 
 export default App;
