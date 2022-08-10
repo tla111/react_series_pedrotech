@@ -3,7 +3,13 @@ import './App.css';
 
 const App = () => {
     return (
-        <div className="App">App</div>
+        <div className="App">
+            <div className="addTask">
+                <input />
+                <button>Add Task</button>
+            </div>
+            <div className="list"></div>
+        </div>
     )
 }
 
