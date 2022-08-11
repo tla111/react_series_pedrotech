@@ -16,9 +16,13 @@ const App = () => {
 }
 
 const Text = () => {
+    const [text, setText] = useState("");
+
     return (
         <div>
-            <h1>Text</h1>
+            <input onChange={(e) => setText(e.target.value)} />
+
+            <h1>{text}</h1>
         </div>
     )
 }
