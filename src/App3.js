@@ -7,4 +7,11 @@ const App = () => {
     )
 }
 
-export default App
+export default App;
+
+/* 
+Stages of Lifecycle:
+    Mounting - Component Appearing on Screen
+    Updating - Component Changing (UI, State, Prop)
+    Unmounting - Component Stop Appearing on Screen
+*/
