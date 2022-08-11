@@ -31,7 +31,7 @@ export default App;
 
 /* 
 Stages of Lifecycle:
-    Mounting - Component Appearing on Screen
+    Mounting - Component Appearing on Screen (Existing)
     Updating - Component Changing (UI, State, Prop)
-    Unmounting - Component Stop Appearing on Screen
+    Unmounting - Component Stop Appearing on Screen (Not Existing)
 */
