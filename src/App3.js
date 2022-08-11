@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 const App = () => {
+    const [showText, setShowText] = useState(false);
+
     return (
-        <div className="App">App3</div>
+        <div className="App">
+            <button onClick={() => setShowText(!showText)}>
+                Show Text
+            </button>
+
+            {showText && <Text />}
+        </div>
+    )
+}
+
+const Text = () => {
+    return (
+        <div>
+            <h1>Text</h1>
+        </div>
     )
 }
 
