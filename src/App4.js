@@ -7,7 +7,7 @@ const App = () => {
     const [name, setName] = useState("")
 
     const fetchData = () => {
-        Axios.get("https://api.agify.io/?name=pedro")
+        Axios.get(`https://api.agify.io/?name=${name}`)
             .then((res) => setName(res.data.age));
     }
 
