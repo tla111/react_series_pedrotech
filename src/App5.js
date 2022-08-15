@@ -7,7 +7,11 @@ const App5 = () => {
 
     return (
         <div className="App">
-            <h1>App5</h1>
+            <Router>
+                <Routes>
+                    <Route />
+                </Routes>
+            </Router>
         </div>
     )
 }
