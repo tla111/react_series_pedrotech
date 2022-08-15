@@ -14,6 +14,7 @@ const App5 = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/menu" element={<Menu />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="*" element={<h1>PAGE NOT FOUND</h1>} />
                 </Routes>
             </Router>
         </div>
