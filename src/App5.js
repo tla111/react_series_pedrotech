@@ -4,17 +4,14 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from "./Pages/Home";
 import Menu from './Pages/Menu';
 import Contact from './Pages/Contact';
+import Navbar from './Components/Navbar';
 
 const App5 = () => {
 
     return (
         <div className="App">
             <Router>
-                <div>
-                    <Link to="/">Home</Link>
-                    <Link to="/menu">Menu</Link>
-                    <Link to="/contact">Contact</Link>
-                </div>
+                <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/menu" element={<Menu />} />
