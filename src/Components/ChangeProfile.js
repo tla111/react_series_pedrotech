@@ -6,7 +6,7 @@ const ChangeProfile = () => {
         <div>
             {""}
             <input onChange={(e) => setNewUsername(e.target.value)} />
-            <button onClick={ }>Change Username</button>
+            {/* <button onClick={ }>Change Username</button> */}
         </div>
     )
 
