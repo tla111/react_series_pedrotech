@@ -14,7 +14,7 @@ const App5 = () => {
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home username={username} />} />
-                    <Route path="/profile" element={<Profile username={username} />} />
+                    <Route path="/profile" element={<Profile username={username} setUsername={setUsername} />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="*" element={<h1>PAGE NOT FOUND</h1>} />
                 </Routes>
