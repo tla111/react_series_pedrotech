@@ -12,6 +12,7 @@ const Home = () => {
     return (
         <div>
             <h1>THIS IS THE HOMEPAGE & user is: {username}</h1>
+            <p>{data.fact}</p>
         </div>
     )
 }
