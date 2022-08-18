@@ -7,8 +7,8 @@ import './App.css'
 const App6 = () => {
     const schema = yup.object().shape({
         fullName: yup.string().required("Your full name is required"),
-        email: yup.string().email().required(),
-        age: yup.number().positive().integer().min(18).required(),
+        email: yup.string().email().required("Valid Email, please"),
+        age: yup.number().positive().integer().min(18).required("Older than 18"),
         password: yup.string().min(4).max(20).required(),
         confirmPassword: yup.string().oneOf([yup.ref("password"), null], "Passwords Don't Match").required()
     })
