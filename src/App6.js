@@ -4,8 +4,6 @@ import * as yup from "yup";
 import './App.css'
 
 const App6 = () => {
-    const { register, handleSubmit } = useForm();
-
     const schema = yup.object().shape({
         fullName: yup.string().required(),
         email: yup.string().email().required(),
@@ -13,6 +11,10 @@ const App6 = () => {
         password: yup.string().min(4).max(20).required(),
         confirmPassword: yup.string().oneOf([yup.ref("password"), null]).required()
     })
+
+    // const { register, handleSubmit } = useForm({
+    //     resolver: 
+    // });
 
     const onSubmit = (data) => {
         console.log(data);
