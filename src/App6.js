@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import './App.css'
 
@@ -12,9 +13,9 @@ const App6 = () => {
         confirmPassword: yup.string().oneOf([yup.ref("password"), null]).required()
     })
 
-    // const { register, handleSubmit } = useForm({
-    //     resolver: 
-    // });
+    const { register, handleSubmit } = useForm({
+        resolver: yupResolver(schema)
+    });
 
     const onSubmit = (data) => {
         console.log(data);
