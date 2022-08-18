@@ -3,9 +3,14 @@ import './App.css'
 
 const App6 = () => {
     return (
-        <div className="App">
-            <h1>React Hook Forms, 1000th Commit</h1>
-        </div>
+        <form style={{ display: "flex", flexDirection: "column", width: "50%" }}>
+            <input type="text" placeholder="Full Name..." />
+            <input type="text" placeholder="Email..." />
+            <input type="text" placeholder="Age..." />
+            <input type="password" placeholder="Password..." />
+            <input type="password" placeholder="Confirm Password..." />
+            <input type="submit" />
+        </form>
     )
 }
 
