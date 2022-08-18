@@ -13,7 +13,7 @@ const App6 = () => {
         confirmPassword: yup.string().oneOf([yup.ref("password"), null]).required()
     })
 
-    const { register, handleSubmit } = useForm({
+    const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(schema)
     });
 
@@ -23,6 +23,7 @@ const App6 = () => {
     return (
         <form style={{ display: "flex", flexDirection: "column", width: "50%" }} onSubmit={handleSubmit(onSubmit)}>
             <input type="text" placeholder="Full Name..." {...register("fullName")} />
+            <p>{errors.fullName?.message}</p>
             <input type="text" placeholder="Email..." {...register("email")} />
             <input type="number" placeholder="Age..." {...register("age")} />
             <input type="password" placeholder="Password..." {...register("password")} />
